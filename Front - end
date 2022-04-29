@@ -1,0 +1,12 @@
+import streamlit as st
+from PIL import Image
+
+image = Image.open('a.jpg')
+st.image(image, caption='')
+backgroundColor="blue"
+
+st.title('Movie Recommender System')
+option =st.selectbox('Which movies like to watch',('Movies_List','Email','Phone'))
+
+if st.button('Recommand'):
+    st.write('kgf')
